@@ -1,0 +1,33 @@
+body {
+	background-color: black;
+	color: darkGrey;
+	font-family: 'Droid Sans Mono', monospace;
+}
+p {
+	font-size: 2em;
+}
+#main {
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 0 0 10em white;
+}
+#timer {
+	font-size: 10em;
+	margin: 0;
+	color: white;
+}
+#timer.soon {
+	color: red;
+}
+#school {
+	position: absolute;
+	bottom: 0.5em;
+	left: 0.5em;
+	
+	background-color: black;
+	color: white;
+	border: none
+}
+.active, #pauseContainer.active {
+	display: block;
+}

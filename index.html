@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Er timen snart slut?</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Venter du også på pausen? SnartSlut tæller ned til slutningen af timen." />
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
+        <!-- Favicon from the Siena Icon Set by Webdesigner Depot -->
+		<link href="images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+		<script type="text/javascript" src="scripts/schools.js"></script>
+		<script type="text/javascript" src="scripts/main.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			<h1>Timen slutter om:</h1>
+			<p id="timer" data-bind="text: displayTime, css: { soon: breakSoon }">00:00:00</p>
+			<noscript>
+				<p>Siden virker desværre ikke uden JavaScript.</p>
+			</noscript>
+		</div>
+		<select id="school" data-bind="options: $root.schools, optionsText: 'name', value: chosenSchool"></select>
+	</body>
+</html>
